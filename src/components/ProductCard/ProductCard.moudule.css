@@ -1,0 +1,102 @@
+.product-card {
+  background-color: #faf9fb;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+  align-content: center;
+
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.product-card__image {
+  padding: 0 5px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.product-card__image img{
+  border-radius: 5px;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ff7d7d;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+.product-card__btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card__btn:hover {
+  background: #ff7722;
+  cursor: pointer;
+}
+
+.product-card__info {
+  padding: 15px 0;
+  margin: 5px 0;
+}
+.product-card__info {
+ text-align: center;
+ color: #1e1e1e;
+}
+
+.product-card__name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.product-card_prices div{
+  display: inline;
+  margin: 5px;
+  padding: 5px;
+}
+
+.product-card__oldPrice {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  opacity: 0.5;
+  flex-grow: 1;
+}
+
+.product-card__price {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.product-card:hover .product-card__btn {
+  opacity: 1;
+}

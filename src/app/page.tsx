@@ -1,20 +1,16 @@
-import { ProductContainer } from "@/components/ProductContainer";
+import { ProductContainer } from "@/components/ProductContainer/ProductContainer";
 import Link from "next/link";
 
 export default async function Home(){
 
   return (
-    <div>
+    <div className="home">
       <h1>Home</h1>
       <Link href="/app">Catalog</Link>
 
-            <ProductContainer />
-            <ProductContainer />
-            <ProductContainer />
-            <ProductContainer />
-            <ProductContainer />
-            <ProductContainer />
-            <ProductContainer />
+        <div className="ProductContainer">
+          <ProductContainer />
+        </div>
     </div>
   )
 }

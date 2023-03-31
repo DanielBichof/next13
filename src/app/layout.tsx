@@ -1,6 +1,6 @@
-import { Header } from '@/components/Header'
+import { Header } from '@/components/Header/Header'
 import { ReactNode } from 'react'
-
+import "./styles/App.css"
 
 export const metadata = {
   title: 'Shoes for you ',
@@ -13,11 +13,11 @@ export default function RootLayout({
   children: ReactNode
 }) {
   return (
-    <html lang="en">
+    <html className="html"lang="en">
       <body>
         <Header/>
         {children}
-        </body>
+      </body>
     </html>
   )
 }
